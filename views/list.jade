@@ -1,0 +1,22 @@
+extends layout
+block content
+    link(rel='stylesheet', href='/stylesheets/list.css')
+    a(href='/user/login') 去登录
+    div(class='table')
+        div(class='thead')
+            div(class='tr')
+                div(class='th') ID
+                div(class='th') 昵称
+                div(class='th') 用户名
+                div(class='th') 微信
+                div(class='th') QQ
+                div(class='th') 电话
+        div(class='tbody')
+            each item in result
+                div(class='tr')
+                    div(class='td')= item.id
+                    div(class='td')= item.nick_name
+                    div(class='td')= item.user_name
+                    div(class='td')= item.wx
+                    div(class='td')= item.qq
+                    div(class='td')= item.phone

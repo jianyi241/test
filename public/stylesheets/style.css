@@ -1,0 +1,32 @@
+body,div,p,input{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+a {
+  text-decoration: none;
+}
+a:not(class){
+  color: #43a3fb;
+}
+a:hover{
+  text-decoration: underline;
+}
+#body{
+  min-height: 1000px;
+}
+#body{
+  width: 1300px;
+  margin: 0 auto;
+}
+.nav{
+  height: 48px;
+  background-color: #43a3fb;
+}
+.footer{
+  height: 60px;
+  background-color: black;
+}

@@ -1,0 +1,125 @@
+.login-container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(100, 149, 237, 0.6);
+}
+
+.login-container > .login-box {
+    position: relative;
+    width: 300px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.login-container > .login-box  .form-block {
+    background-color: rgba(255, 255, 255, .1);
+    padding: 8px 22px 16px;
+}
+
+.login-container > .login-box  .form-block > .form-title {
+    font-size: 28px;
+    letter-spacing: 8px;
+    font-weight: 300;
+    color: #ffffff;
+    text-shadow: 0 0 10px #ffffff;
+    text-align: center;
+    margin: 6px 0 18px;
+}
+
+.login-container > .login-box  .form-block > .input-wrapper {
+    position: relative;
+    font-size: 14px;
+}
+
+.login-container > .login-box  .form-block > .input-wrapper:last-child {
+    margin-top: 16px;
+}
+
+.login-container > .login-box  .form-block > .input-wrapper > .input-text {
+    width: 100%;
+    line-height: 42px;
+    border-width: 0;
+    color: #ffffff;
+    background-color: rgba(100, 149, 237, 0.3);
+    padding: 0 8px 0 28px;
+    outline: none;
+}
+
+.login-container > .login-box  .form-block > .input-wrapper > .input-text:hover {
+    background-color: rgba(100, 149, 237, 0.5);
+}
+
+.login-container > .login-box  .form-block > .input-wrapper > .icon {
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    left: 5px;
+    top: 12px;
+}
+
+.login-container > .login-box  .form-block > .input-wrapper > .user-icon {
+    background: url("../images/person.svg") 0 0/contain no-repeat;
+}
+
+.login-container > .login-box  .form-block > .input-wrapper > .pwd-icon {
+    background: url("../images/lock.svg") 0 0/contain no-repeat;
+}
+
+.login-container > .login-box  .edit-block {
+    background-color: rgba(255, 255, 255, .1);
+    padding: 16px;
+    margin-top: 4px;
+}
+.validate{
+    position: absolute;
+    line-height: 42px;
+    top: 0;
+    left: 28px;
+    color: #d9534f;
+    font-size: 14px;
+    transition: width .1s ease-in-out;
+    overflow: hidden;
+}
+
+.login-container > .login-box  .edit-block > button {
+    width: 100%;
+    line-height: 36px;
+    color: #ffffff;
+    letter-spacing: 6px;
+    border-width: 0;
+    outline: none;
+    transition: background-color .1s ease-in-out;
+}
+
+.login-container > .login-box  .edit-block > .login-btn {
+    background-color: #43a3fb;
+}
+
+.login-container > .login-box  .edit-block > .login-btn:hover {
+    background-color: #3c93e2;
+}
+
+.login-container > .login-box  .edit-block > .login-btn:active {
+    background-color: #43a3fb;
+}
+.login-container > .login-box  .edit-block > .login-fail{
+    position: absolute;
+    width: 100%;
+    color: #d9534f;
+    text-align: center;
+    bottom: 34px;
+    left: 0;
+}
+.login-container > .login-box  .edit-block > .other {
+    display: flex;
+    justify-content: space-between;
+    line-height: 1.5;
+    font-size: 12px;
+    margin-top: 22px;
+}
+
+.login-container > .login-box  .edit-block > .other > .other-link {
+    color: #eeeeee;
+}

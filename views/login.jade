@@ -1,0 +1,29 @@
+doctype html
+html
+    head
+        title 登录
+        link(rel='stylesheet', href='/stylesheets/style.css')
+        link(rel='stylesheet', href='/stylesheets/login.css')
+    body
+    div(class='login-container')
+        div(class='login-box')
+            form(action="/loginIn",method="post",id="loginForm")
+                div(class='form-block')
+                    div(class='form-title') 简逸日记
+                    div(class='input-wrapper')
+                        input(type='text',class='input-text',id='username',name='username')
+                        i(class='icon user-icon')
+                        p(class="validate",id="validateUserName",onclick="focusValid('u')")
+                    div(class='input-wrapper')
+                        input(type='password',class='input-text',id='password',name='password')
+                        i(class='icon pwd-icon')
+                        p(class="validate",id="validatePassword",onclick="focusValid('p')")
+                div(class='edit-block')
+                    button(class='login-btn',type='submit') 登录
+                    div(class='login-fail')= result
+                    div(class='other')
+                        a(class='other-link',href='https://google.com') 还没有账号
+                        a(class='other-link',href='https://google.com') 忘记密码?
+
+
+    script(src="/javascripts/login.js")
